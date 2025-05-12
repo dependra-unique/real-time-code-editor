@@ -13,7 +13,12 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+	origin: "https://real-time-code-editor-gcg9.vercel.app/", // Replace with real frontend URL
+	methods: ["GET", "POST", "PUT", "DELETE"],
+	credentials: true
+  }));
 
 app.use(express.static(path.join(__dirname, "public"))) // Serve static files
 
