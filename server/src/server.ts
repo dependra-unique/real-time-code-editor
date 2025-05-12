@@ -271,6 +271,6 @@ server.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`)
 })
 
-app.get("/aa", (req, res) => {
-	res.send("Hello World!")
-})
+// app.get("/aa", (req, res) => {
+// 	res.send("Hello World!")
+// })
